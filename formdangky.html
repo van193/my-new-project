@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 15px 0 5px;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"] {
+            width: 50%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        .gender-options label {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <form action="http://demo.codegym.vn/6/registration_form/register.php" method="POST">
+        <label for="name">Họ và tên:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Số điện thoại:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label>Giới tính:</label>
+        <div class="gender-options">
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Nam</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Nữ</label>
+            <input type="radio" id="other" name="gender" value="other" required>
+            <label for="other">Khác</label>
+        </div>
+
+        <button type="submit">Đăng ký</button>
+    </form>
+</div>
+</body>
+</html>
