@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Đăng Ký Học Viên</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            width: 100%;
+            margin: 0 auto;
+            background-color: #ffffc5;
+            padding: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            margin-top: 50px;
+        }
+
+        h1 {
+            text-align: center;
+            color: blue;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .gender-options label {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        .gender-options input {
+            margin-right: 10px;
+        }
+
+        button {
+            width: 49%;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Đăng Ký Học Viên</h1>
+        <form action="#" method="POST">
+            <label for="yourname">Họ và tên:</label>
+            <input type="text" id="yourname" name="yourname" placeholder="Nhập họ và tên" required>
+
+            <label for="birthdate">Ngày sinh:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label>Giới tính:</label>
+            <div class="gender-options">
+                <input type="radio" id="male" name="gender" value="male" required>
+                <label for="male">Nam</label>
+
+                <input type="radio" id="female" name="gender" value="female" required>
+                <label for="female">Nữ</label>
+            </div>
+
+            <label for="address">Địa chỉ:</label>
+            <input type="text" id="address" name="address" placeholder="Nhập địa chỉ" required>
+
+            <label for="class">Lớp:</label>
+            <select id="class" name="class" required>
+                <option value="">Chọn lớp</option>
+                <option value="class1">Lớp A1</option>
+                <option value="class2">Lớp A2</option>
+                <option value="class3">Lớp A3</option>
+            </select>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Nhập email" required>
+
+            <label for="phone">Điện thoại:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+
+            <div class="buttons">
+                <button type="submit">Đăng ký</button>
+                <button type="reset">Nhập lại</button>
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
