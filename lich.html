@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch tháng trang trí</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        table {
+            width: 80%;
+            max-width: 900px;
+            border-collapse: collapse;
+            margin: 20px auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        table caption {
+            font-size: 28px;
+            font-weight: bold;
+            padding: 20px;
+            background-color: #4caf50;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 20px;
+            text-align: center;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        th {
+            background-color: #f7f7f7;
+            color: #333;
+            font-size: 20px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        td {
+            height: 120px;
+            vertical-align: top;
+            cursor: pointer;
+        }
+
+        td:hover {
+            background-color: #e0f7fa;
+            transform: scale(1.05);
+            transition: all 0.3s ease-in-out;
+        }
+
+        .today {
+            background-color: #ffeb3b;
+            box-shadow: 0 0 15px rgba(255, 235, 59, 0.5);
+            border-radius: 50%;
+        }
+
+        .weekend {
+            background-color: #f9f9f9;
+        }
+
+        /* Style for different hover and focus effects */
+        td:active {
+            background-color: #81c784;
+            color: white;
+        }
+
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+
+            th, td {
+                padding: 10px;
+                font-size: 14px;
+            }
+
+            td {
+                height: 80px;
+            }
+
+            table caption {
+                font-size: 20px;
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <caption>Tháng 9 năm 2024</caption>
+    <thead>
+    <tr>
+        <th>Chủ nhật</th>
+        <th>Thứ hai</th>
+        <th>Thứ ba</th>
+        <th>Thứ tư</th>
+        <th>Thứ năm</th>
+        <th>Thứ sáu</th>
+        <th>Thứ bảy</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td class="weekend">1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+        <td class="weekend">7</td>
+    </tr>
+    <tr>
+        <td class="weekend">8</td>
+        <td>9</td>
+        <td>10</td>
+        <td>11</td>
+        <td>12</td>
+        <td>13</td>
+        <td class="weekend">14</td>
+    </tr>
+    <tr>
+        <td class="weekend">15</td>
+        <td>16</td>
+        <td>17</td>
+        <td>18</td>
+        <td>19</td>
+        <td>20</td>
+        <td class="weekend">21</td>
+    </tr>
+    <tr>
+        <td class="weekend">22</td>
+        <td>23</td>
+        <td>24</td>
+        <td>25</td>
+        <td>26</td>
+        <td>27</td>
+        <td class="weekend today">28</td>
+    </tr>
+    <tr>
+        <td class="weekend">29</td>
+        <td>30</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="weekend"></td>
+    </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
